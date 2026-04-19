@@ -863,7 +863,7 @@ const PhotographyBanner: React.FC = () => {
                 <span className="text tracking-tighter">{currentText}</span>
               </h1>
               <p className="tracking-widest">
-                Помогаем предпринимателям выгодно купить или продать готовый бизнес. Тимур — ваш надёжный партнёр в мире M&A сделок.
+                Помогаем предпринимателям выгодно купить или продать готовый бизнес. Тимур Архутин — ваш надёжный партнёр в мире M&A сделок.
               </p>
               <a href="#cta" className="book-link">
                 <span className="linktext tracking-tighter text-3xl">Найти бизнес</span>
@@ -908,7 +908,7 @@ const PhotographyBanner: React.FC = () => {
           <section className="features-section">
             <div className="features-container">
               <div className="features-content">
-                <h2>Почему выбирают Тимура?</h2>
+                <h2>Почему выбирают Тимура Архутина?</h2>
               </div>
               <ul className="features-list">
                 <li className="feature-item">
