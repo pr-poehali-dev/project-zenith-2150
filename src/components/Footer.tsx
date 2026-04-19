@@ -1,36 +1,36 @@
 import { Facebook, Instagram, Twitter, Github, Mail, MapPin, Phone } from "lucide-react"
 
 const data = {
-  facebookLink: "https://facebook.com/digitalhub",
-  instaLink: "https://instagram.com/digitalhub",
-  twitterLink: "https://twitter.com/digitalhub",
-  githubLink: "https://github.com/digitalhub",
+  facebookLink: "https://facebook.com/",
+  instaLink: "https://instagram.com/",
+  twitterLink: "https://t.me/",
+  githubLink: "https://wa.me/",
   services: {
-    web: "/web-razrabotka",
-    mobile: "/mobilnye-prilozheniya",
-    design: "/ui-ux-dizajn",
-    marketing: "/digital-marketing",
+    web: "#cta",
+    mobile: "#cta",
+    design: "#cta",
+    marketing: "#cta",
   },
   about: {
-    story: "/o-nas",
-    team: "/komanda",
-    portfolio: "/portfolio",
-    careers: "/vakansii",
+    story: "#",
+    team: "#",
+    portfolio: "#",
+    careers: "#cta",
   },
   help: {
-    faqs: "/faq",
-    support: "/podderzhka",
-    blog: "/blog",
+    faqs: "#",
+    support: "#cta",
+    blog: "#",
   },
   contact: {
-    email: "hello@digitalhub.ru",
-    phone: "+7 (495) 123-45-67",
+    email: "timur@bizmoscow.ru",
+    phone: "+7 (999) 000-00-00",
     address: "Москва, Россия",
   },
   company: {
-    name: "ДиджиталХаб",
+    name: "БизнесМаркет",
     description:
-      "Создаём цифровые продукты, которые помогают бизнесу расти. Веб-разработка, мобильные приложения и дизайн под ключ.",
+      "Помогаем купить и продать готовый бизнес быстро, прозрачно и выгодно. Более 200 успешных сделок.",
   },
 }
 
@@ -49,10 +49,10 @@ const aboutLinks = [
 ]
 
 const serviceLinks = [
-  { text: "Веб-разработка", href: data.services.web },
-  { text: "Мобильные приложения", href: data.services.mobile },
-  { text: "UI/UX Дизайн", href: data.services.design },
-  { text: "Digital-маркетинг", href: data.services.marketing },
+  { text: "Купить бизнес", href: data.services.web },
+  { text: "Продать бизнес", href: data.services.mobile },
+  { text: "Оценка бизнеса", href: data.services.design },
+  { text: "Консультация", href: data.services.marketing },
 ]
 
 const helpfulLinks = [

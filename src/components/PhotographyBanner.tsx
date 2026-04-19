@@ -6,7 +6,7 @@ const PhotographyBanner: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
 
-  const texts = ["БИЗНЕС.", "БРЕНДЫ."]
+  const texts = ["БИЗНЕС.", "ДОХОД.", "СДЕЛКИ."]
 
   useEffect(() => {
     const typeSpeed = isDeleting ? 40 : 100
@@ -828,7 +828,7 @@ const PhotographyBanner: React.FC = () => {
             <div className="left-part">
               <h1>
                 <span className="d-flex">
-                  {["С", "О", "З", "Д", "А", "Ё", "М"].map((char, index) => (
+                  {["К", "У", "П", "И", "М"].map((char, index) => (
                     <span key={index} className="char tracking-tighter" style={{ animationDelay: `${index * 0.08}s` }}>
                       {char === " " ? "\u00A0" : char}
                     </span>
@@ -837,10 +837,10 @@ const PhotographyBanner: React.FC = () => {
                 <span className="text tracking-tighter">{currentText}</span>
               </h1>
               <p className="tracking-widest">
-                Помогаем предпринимателям запускать цифровые продукты быстрее с помощью современных технологий
+                Помогаем предпринимателям выгодно купить или продать готовый бизнес. Тимур — ваш надёжный партнёр в мире M&A сделок.
               </p>
               <a href="#cta" className="book-link">
-                <span className="linktext tracking-tighter text-3xl">Начать проект</span>
+                <span className="linktext tracking-tighter text-3xl">Найти бизнес</span>
                 <span className="arrow">
                   <span></span>
                 </span>
@@ -888,42 +888,42 @@ const PhotographyBanner: React.FC = () => {
           <section className="features-section">
             <div className="features-container">
               <div className="features-content">
-                <h2>Почему выбирают нас?</h2>
+                <h2>Почему выбирают Тимура?</h2>
               </div>
               <ul className="features-list">
                 <li className="feature-item">
                   <div className="feature-icon">01</div>
                   <div className="feature-text">
-                    <h3>Опытная команда</h3>
+                    <h3>База готовых объектов</h3>
                     <p className="font-light tracking-wider">
-                      Более 10 лет опыта в разработке цифровых продуктов для бизнеса любого масштаба
+                      Сотни проверенных бизнесов в базе — от кафе и салонов до онлайн-сервисов и производств
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">02</div>
                   <div className="feature-text">
-                    <h3>Современные технологии</h3>
+                    <h3>Прозрачная оценка</h3>
                     <p className="tracking-wider">
-                      Используем передовые инструменты и фреймворки для создания быстрых и надёжных решений
+                      Профессиональный аудит финансов и активов — покупаете только то, что реально стоит своих денег
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">03</div>
                   <div className="feature-text">
-                    <h3>Индивидуальный подход</h3>
+                    <h3>Сопровождение сделки</h3>
                     <p className="tracking-wider">
-                      Каждый проект уникален — мы адаптируем решения под ваши конкретные задачи и цели
+                      Полное юридическое и финансовое сопровождение от первой встречи до подписания договора
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">04</div>
                   <div className="feature-text">
-                    <h3>Поддержка 24/7</h3>
+                    <h3>Быстрый результат</h3>
                     <p className="tracking-wider">
-                      Обеспечиваем техническую поддержку и сопровождение на всех этапах работы
+                      Средний срок сделки — 30 дней. Без затяжных переговоров и скрытых комиссий
                     </p>
                   </div>
                 </li>
@@ -937,73 +937,73 @@ const PhotographyBanner: React.FC = () => {
               <div className="testimonials-marquee">
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Команда полностью изменила наш подход к цифровому присутствию. Результаты превзошли все ожидания."
+                    "Продал свою кофейню за 3 недели по цене выше рынка. Тимур нашёл покупателя, которого я сам не мог найти полгода."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">АС</div>
+                    <div className="author-avatar">АК</div>
                     <div className="author-info">
-                      <h4>Алексей Смирнов</h4>
-                      <p>Директор по развитию</p>
+                      <h4>Андрей Кравцов</h4>
+                      <p>Владелец кофейни</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Профессиональный подход и внимание к деталям. Запустили проект в рекордные сроки без потери качества."
+                    "Купила действующий салон красоты. Всё чисто — финансы проверены, договор составлен. Уже на второй месяц вышла в плюс."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">МК</div>
+                    <div className="author-avatar">НП</div>
                     <div className="author-info">
-                      <h4>Мария Козлова</h4>
-                      <p>Основатель стартапа</p>
+                      <h4>Наталья Петрова</h4>
+                      <p>Новый владелец салона</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "От идеи до запуска — всё прошло гладко. Рекомендую всем, кто ценит качество и скорость."
+                    "Искал готовый бизнес с оборотом от 1 млн. Тимур подобрал 5 вариантов за неделю — выбрал лучший. Доволен на 100%."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">ДВ</div>
+                    <div className="author-avatar">ИМ</div>
                     <div className="author-info">
-                      <h4>Дмитрий Волков</h4>
-                      <p>Предприниматель</p>
+                      <h4>Игорь Малинин</h4>
+                      <p>Инвестор</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Команда полностью изменила наш подход к цифровому присутствию. Результаты превзошли все ожидания."
+                    "Продал свою кофейню за 3 недели по цене выше рынка. Тимур нашёл покупателя, которого я сам не мог найти полгода."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">АС</div>
+                    <div className="author-avatar">АК</div>
                     <div className="author-info">
-                      <h4>Алексей Смирнов</h4>
-                      <p>Директор по развитию</p>
+                      <h4>Андрей Кравцов</h4>
+                      <p>Владелец кофейни</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Профессиональный подход и внимание к деталям. Запустили проект в рекордные сроки без потери качества."
+                    "Купила действующий салон красоты. Всё чисто — финансы проверены, договор составлен. Уже на второй месяц вышла в плюс."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">МК</div>
+                    <div className="author-avatar">НП</div>
                     <div className="author-info">
-                      <h4>Мария Козлова</h4>
-                      <p>Основатель стартапа</p>
+                      <h4>Наталья Петрова</h4>
+                      <p>Новый владелец салона</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "От идеи до запуска — всё прошло гладко. Рекомендую всем, кто ценит качество и скорость."
+                    "Искал готовый бизнес с оборотом от 1 млн. Тимур подобрал 5 вариантов за неделю — выбрал лучший. Доволен на 100%."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">ДВ</div>
+                    <div className="author-avatar">ИМ</div>
                     <div className="author-info">
-                      <h4>Дмитрий Волков</h4>
-                      <p>Предприниматель</p>
+                      <h4>Игорь Малинин</h4>
+                      <p>Инвестор</p>
                     </div>
                   </div>
                 </div>
@@ -1013,16 +1013,16 @@ const PhotographyBanner: React.FC = () => {
 
           <section className="cta-section" id="cta">
             <div className="cta-container">
-              <h2 className="cta-title text-center">Готовы начать?</h2>
+              <h2 className="cta-title text-center">Ваш бизнес — ваши правила.</h2>
               <p className="cta-subtitle">
-                Присоединяйтесь к сотням компаний, которые уже трансформировали свой бизнес. Ваш путь к успеху начинается здесь.
+                Хотите купить готовый бизнес или выгодно продать свой? Оставьте заявку — Тимур свяжется с вами в течение часа.
               </p>
               <div className="cta-buttons">
                 <a href="#" className="cta-button">
-                  Обсудить проект
+                  Хочу купить бизнес
                 </a>
                 <a href="#" className="cta-button secondary">
-                  Посмотреть кейсы
+                  Хочу продать бизнес
                 </a>
               </div>
             </div>
