@@ -419,6 +419,32 @@ const PhotographyBanner: React.FC = () => {
           opacity: 0.9;
         }
 
+        .timur-photo {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 90%;
+          height: 95%;
+          object-fit: cover;
+          object-position: center top;
+          z-index: 2;
+          border-radius: 20px 20px 0 0;
+          filter: drop-shadow(0 0 40px rgba(211, 54, 130, 0.4));
+        }
+
+        .photo-ring {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 95%;
+          height: 95%;
+          border-radius: 20px;
+          border: 2px solid rgba(211, 54, 130, 0.4);
+          z-index: 1;
+        }
+
         @media screen and (min-width: 1500px) {
           .info-section {
             padding-left: 120px;
@@ -863,18 +889,12 @@ const PhotographyBanner: React.FC = () => {
                   />
                 ))}
               </div>
-              <div className="bg-line">
-                <img
-                  src="https://www.yudiz.com/codepen/photography-banner/wave.svg"
-                  alt="Line"
-                  style={{ filter: "hue-rotate(280deg) saturate(1.5)" }}
-                />
-                <img
-                  src="https://www.yudiz.com/codepen/photography-banner/wave.svg"
-                  alt="Line"
-                  style={{ filter: "hue-rotate(280deg) saturate(1.5)" }}
-                />
-              </div>
+              <div className="photo-ring" />
+              <img
+                src="https://cdn.poehali.dev/projects/e85f5001-deea-485f-b13e-8981d20d7be5/bucket/527e12e2-b21c-4867-8dcc-8b4ba4c09cd4.jpg"
+                alt="Тимур"
+                className="timur-photo"
+              />
               <div className="bg-dash-circle">
                 <img
                   src="https://www.yudiz.com/codepen/photography-banner/dash-circle.svg"
